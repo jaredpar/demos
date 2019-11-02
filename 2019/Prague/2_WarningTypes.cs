@@ -1,4 +1,5 @@
-﻿class WarningKinds
+﻿
+class WarningKinds
 {
     enum Color
     {

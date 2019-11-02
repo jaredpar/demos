@@ -11,20 +11,13 @@ class Annotations_Are_Not_Enough
 
     UserData GetUserData(string? id)
     {
-        string id2;
         if (id is null)
         {
-            id2 = GetDefaultId();
-        }
-        else
-        {
-            // Still a warning because assigning 
-            // string? to string
-            id2 = id;
+            id = GetDefaultId();
         }
 
         // Safe now
-        return _userDataMap[id2];
+        return _userDataMap[id];
     }
 
     string GetDefaultId() => "Default";
