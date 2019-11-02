@@ -7,29 +7,25 @@ class Annotations_Are_Not_Enough
 {
     class UserData { }
 
-    Dictionary<string, UserData> _userDataMap;
+    Dictionary<string, UserData> _userDataMap = new Dictionary<string, UserData>();
 
-UserData GetUserData(string? id)
-{
-    string id2;
-    if (id is null)
+    UserData GetUserData(string? id)
     {
-        id2 = GetDefaultId();
-    }
-    else
-    {
-        // Still a warning because assigning 
-        // string? to string
-        id2 = id;
+        string id2;
+        if (id is null)
+        {
+            id2 = GetDefaultId();
+        }
+        else
+        {
+            // Still a warning because assigning 
+            // string? to string
+            id2 = id;
+        }
+
+        // Safe now
+        return _userDataMap[id2];
     }
 
-    // Safe now
-    return _userDataMap[id2];
-}
-
-    string GetDefaultId()
-    {
-
-    }
-}
+    string GetDefaultId() => "Default";
 }

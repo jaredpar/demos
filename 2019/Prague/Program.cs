@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-#nullable enable
 
-    class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            var s = GetIt();
-            s ??= "";
-            s.ToLower();
-        }
+        string local;
+        Console.WriteLine("Hello World!");
+        var s = GetIt();
+        s ??= "";
+        s.ToLower();
+    }
 
-        static string? GetIt() => null;
+    static string? GetIt() => null;
 
 #pragma warning disable 168
         static void Example()

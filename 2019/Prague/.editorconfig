@@ -10,7 +10,7 @@ indent_style = space
 [*.{cs,csx}] 
 indent_size = 4 
 insert_final_newline = true 
-charset = utf-8-bom 
+charset = utf-8-bom C:\Users\jaredpar\OneDrive\Documents\Work\Talks\2019\Prague 2019\Demos\.editorconfig
 ############################### 
 # .NET Coding Conventions     # 
 ############################### 
@@ -116,8 +116,12 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 # Wrapping preferences 
 csharp_preserve_single_line_statements = true 
 csharp_preserve_single_line_blocks = true 
-# Random suppressions
+
+# Demo suppressions to make the presentation cleaner
 dotnet_diagnostic.IDE0001.severity = none
+dotnet_diagnostic.IDE0018.severity = none
 dotnet_diagnostic.IDE0007.severity = none
 dotnet_diagnostic.IDE0028.severity = none
+dotnet_diagnostic.IDE0044.severity = none
 dotnet_diagnostic.IDE0059.severity = none
+dotnet_diagnostic.CS168.severity = none
