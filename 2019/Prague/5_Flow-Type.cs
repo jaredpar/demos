@@ -12,5 +12,4 @@ class StringUtil
 
         Console.WriteLine($"{str.Length} - {str}");
     }
-
 }

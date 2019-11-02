@@ -13,7 +13,9 @@ class Annotations
         string? s2;
 
         // non-nullable List<T> which contains 
-        //nullable string values
-        List<string?> list = new List<string?>();
+        // non-nullable string values
+        List<string> list = new List<string>();
     }
+
+    void Use(string s) { }
 }

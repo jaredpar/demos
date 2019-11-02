@@ -125,3 +125,6 @@ dotnet_diagnostic.IDE0028.severity = none
 dotnet_diagnostic.IDE0044.severity = none
 dotnet_diagnostic.IDE0059.severity = none
 dotnet_diagnostic.CS0168.severity = none
+
+[5_Flow*.cs]
+dotnet_diagnostic.CS8632.severity = none
