@@ -23,5 +23,6 @@ class PropretiesAndFields
 
     void M(Person p)
     {
+
     }
 }

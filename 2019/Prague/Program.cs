@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+#nullable enable
+
 class Program
 {
     static void Main(string[] args)
@@ -10,6 +12,16 @@ class Program
         var s = GetIt();
         s ??= "";
         s.ToLower();
+
+        List<string> ss = null;
+        List<string?> su = null;
+        List<string?>? uu = null;
+        List<string>? us = null;
+
+        us = ss;
+        su = ss!;
+        uu = su;
+        us = uu;
     }
 
     static string? GetIt() => null;

@@ -1,18 +1,28 @@
 ﻿#nullable enable
 using System;
+using static System.Console;
 
 class Swicthy
 {
-    void PrintIt(string? str)
+    void PrintAsNumber(object? data)
     {
-        if (str == null)
+        switch (data)
         {
-            str = "";
+            case string s:
+                WriteLine(int.Parse(s));
+                break;
+            case int i:
+                WriteLine(i);
+                break;
+            case null:
+                WriteLine("(null)");
+                break;
+            case var v:
+                WriteLine(v.GetHashCode());
+                break;
         }
 
-        Console.WriteLine($"{str.Length} - {str}");
+        data.ToString();
     }
-
 }
-
 
