@@ -1,24 +1,27 @@
 ﻿using System;
+using static System.Console;
 using System.Collections.Generic;
 using System.Text;
 #nullable enable
 
 class PropretiesAndFields
 {
-    class UserData { }
-
-    Dictionary<string, UserData> _userDataMap = new Dictionary<string, UserData>();
-
-    UserData GetUserData(string? id)
+    class Person
     {
-        if (id is null)
+        public string FirstName { get; set; }
+        public string? MiddleName { get; set; }
+        public string LastName { get; set; }
+
+        public Person(string firstName, string lastName)
         {
-            id = GetDefaultId();
+            FirstName = firstName;
+            LastName = lastName;
         }
 
-        // Safe now
-        return _userDataMap[id];
+        public string? GetMiddleName() => MiddleName;
     }
 
-    string GetDefaultId() => "Default";
+    void M(Person p)
+    {
+    }
 }
