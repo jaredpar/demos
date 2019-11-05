@@ -14,9 +14,6 @@ class Swicthy
             case int i:
                 WriteLine(i);
                 break;
-            case null:
-                WriteLine("(null)");
-                break;
             case var v:
                 WriteLine(v.GetHashCode());
                 break;
