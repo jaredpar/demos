@@ -5,6 +5,7 @@ enum WidgetKind
 {
     Shiny,
     Dull,
+    New,
 }
 
 class Widget
