@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-class PopQuiz
+class FrameworkAnnotations
 {
     void M(string path)
     {

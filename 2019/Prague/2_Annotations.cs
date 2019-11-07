@@ -1,5 +1,4 @@
 ﻿#nullable enable
-
 using System.Collections.Generic;
 
 class Annotations
@@ -7,15 +6,17 @@ class Annotations
     void Example()
     {
         // non-nullable string
-        string s1;
+        string nonNullableString;
 
         // nullable string
-        string? s2;
+        string? nullableString;
 
         // non-nullable List<T> which contains 
         // non-nullable string values
         List<string> list = new List<string>();
     }
 
-    void Use(string s) { }
+    void UseDisallowNull(string s) { }
+
+    void UseAllowNull(string? s) { }
 }

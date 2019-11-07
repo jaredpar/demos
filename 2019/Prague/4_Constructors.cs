@@ -10,7 +10,7 @@ class Name
     {
         First = first;
         Middle = middle;
-        Last = last;
+        // Last = last;
     }
 
     public Name(string first, string last) :
