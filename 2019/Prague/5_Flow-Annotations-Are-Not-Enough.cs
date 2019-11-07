@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+#nullable enable
 
 class Annotations_Are_Not_Enough
 {
@@ -13,7 +14,6 @@ class Annotations_Are_Not_Enough
             id = GetDefaultId();
         }
 
-        // Safe now
         return _userDataMap[id];
     }
 

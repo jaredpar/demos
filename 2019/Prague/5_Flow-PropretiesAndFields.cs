@@ -1,8 +1,4 @@
-﻿using System;
-using static System.Console;
-using System.Collections.Generic;
-using System.Text;
-#nullable enable
+﻿#nullable enable
 
 class PropretiesAndFields
 {
@@ -23,6 +19,5 @@ class PropretiesAndFields
 
     void M(Person p)
     {
-
     }
 }
