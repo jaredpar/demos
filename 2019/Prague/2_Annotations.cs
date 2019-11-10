@@ -3,20 +3,25 @@ using System.Collections.Generic;
 
 class Annotations
 {
-    void Example()
+    void DisallowNull(string s) { }
+    void AllowNull(string? s) { }
+
+    void Example(string str)
     {
-        // non-nullable string
-        string nonNullableString;
-
-        // nullable string
-        string? nullableString;
-
-        // non-nullable List<T> which contains 
-        // non-nullable string values
-        List<string> list = new List<string>();
+        DisallowNull(str);
+        AllowNull(str);
+        str.ToString();
+        str = null;
     }
 
-    void UseDisallowNull(string s) { }
+    void ExampleGeneric(List<string> list)
+    {
+        list[0] = "";
+        list[0] = null;
+        list[0].GetHashCode();
+        AllowNull(list[0]);
+        DisallowNull(list[0]);
+        list = new List<string>();
+    }
 
-    void UseAllowNull(string? s) { }
 }
