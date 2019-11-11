@@ -18,7 +18,6 @@ class AttributesTryGet
 
     bool TryParse(string value, out Address? address)
     {
-
         string[] all = value.Split('#');
         if (all.Length != 2)
         {
