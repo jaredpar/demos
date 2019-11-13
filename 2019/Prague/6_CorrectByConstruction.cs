@@ -1,5 +1,5 @@
 ﻿#nullable enable
-using System;
+using static System.Console;
 
 class Correct
 {
@@ -24,17 +24,23 @@ class Correct
 
     void ByConstruction(object? o)
     {
-        bool isNonNull = o is object;
-        if (isNonNull)
-        {
-            o.ToString();
-        }
+        o.ToString();
 
         bool isString = o is string;
+        bool isName = o is Name;
         if (isString)
         {
             string str = (string)o;
-            str.GetHashCode();
+            WriteLine(str.Length);
+        }
+        else if (isName)
+        {
+            Name name = (Name)o;
+            WriteLine(name.First.Length);
+            WriteLine(name.Middle.Length);
+            WriteLine(name.Last.Length);
         }
     }
 }
+
+// 32:15 - 2

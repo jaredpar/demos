@@ -1,4 +1,5 @@
 ﻿#nullable enable
+using static System.Console;
 
 class PropretiesAndFields
 {
@@ -19,5 +20,12 @@ class PropretiesAndFields
 
     void M(Person p)
     {
+        WriteLine(p.FirstName.Length);
+        WriteLine(p.MiddleName.Length);
+        WriteLine(p.LastName.Length);
+
+        WriteLine(p.GetMiddleName().Length);
     }
 }
+
+// 27:45 - 2:15

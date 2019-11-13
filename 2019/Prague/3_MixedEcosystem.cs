@@ -16,3 +16,5 @@ class Assembly2
         return o.GetHashCode();
     }
 }
+
+// 21:00 - 2
