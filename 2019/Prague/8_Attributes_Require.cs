@@ -27,4 +27,6 @@ class Attributes
 }
 
 // 35:30 - 2 
+// what do we do about API patterns
+// feature incomplete if we can't leverage
 
