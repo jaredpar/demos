@@ -14,7 +14,7 @@ class Annotations_Are_Not_Enough
             id = GetDefaultId();
         }
 
-        return _userDataMap[id];
+        return _userDataMap[id!];
     }
 
     string GetDefaultId() => "Default";

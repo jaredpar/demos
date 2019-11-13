@@ -18,3 +18,4 @@ class Assembly2
 }
 
 // 21:00 - 2
+// code with nullability enabled mixing with nullability disabled
