@@ -1,5 +1,6 @@
 ﻿#nullable enable
 using System;
+using static System.Console;
 using System.Diagnostics.CodeAnalysis;
 
 class AttributesTryGet
@@ -12,8 +13,8 @@ class AttributesTryGet
             return;
         }
 
-        Console.WriteLine($"Name is {address.Name}");
-        Console.WriteLine($"Lives on {address.Street}");
+        WriteLine($"Name is {address.Name}");
+        WriteLine($"Lives on {address.Street}");
     }
 
     bool TryParse(string value, out Address? address)

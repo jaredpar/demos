@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 class Name
 {
@@ -28,7 +29,7 @@ class ConstructorUse
             name.First.Length + 
             name.Middle.Length +
             name.Last.Length;
-        Console.WriteLine(length);
+        WriteLine(length);
     }
 }
 

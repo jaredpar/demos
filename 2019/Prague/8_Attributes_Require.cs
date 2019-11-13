@@ -1,5 +1,6 @@
 ﻿#nullable enable
 using System;
+using static System.Console;
 using System.Diagnostics.CodeAnalysis;
 
 class Address
@@ -13,8 +14,8 @@ class Attributes
     void M(Address? address)
     {
         Require(address != null);
-        Console.WriteLine($"Name is {address.Name}");
-        Console.WriteLine($"Lives on {address.Street}");
+        WriteLine($"Name is {address.Name}");
+        WriteLine($"Lives on {address.Street}");
     }
 
     static void Require(bool b)
