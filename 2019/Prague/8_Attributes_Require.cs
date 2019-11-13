@@ -29,6 +29,7 @@ class Attributes
 
 // 35:30 - 2 
 // what do we do about API patterns
+// every code base has a Requires, TryGetValue, etc ...
 // feature incomplete if we can't leverage
 // [DoesNotReturnIf(false)]
 
