@@ -36,5 +36,5 @@ class AttributesTryGet
 }
 
 // 37:30 - 1
-
+// [NotNullWhen(returnValue: true)]
 
