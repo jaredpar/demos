@@ -7,7 +7,7 @@ class Annotations_Are_Not_Enough
 
     Dictionary<string, UserData> _userDataMap = new Dictionary<string, UserData>();
 
-    UserData GetUserData(string? id)
+    UserData GetUserData(string? id = null)
     {
         if (id is null)
         {
