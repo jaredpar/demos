@@ -43,3 +43,4 @@ class WidgetFactory
 }
 
 // 15:00 - 3-4
+// lexical scoping, can be anywhere

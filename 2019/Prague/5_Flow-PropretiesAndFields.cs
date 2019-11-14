@@ -29,3 +29,4 @@ class PropretiesAndFields
 }
 
 // 27:45 - 2:15
+// flow analysis tracks fields / properties just as it tracks locals

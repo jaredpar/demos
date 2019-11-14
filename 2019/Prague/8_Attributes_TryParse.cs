@@ -36,5 +36,6 @@ class AttributesTryGet
 }
 
 // 37:30 - 1
+// collection of other attributes linked in the more resources slide
 // [NotNullWhen(returnValue: true)]
 

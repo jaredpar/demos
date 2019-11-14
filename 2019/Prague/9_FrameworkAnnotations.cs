@@ -23,3 +23,5 @@ class FrameworkAnnotations
 }
 
 // 38:30 - 2:30
+// sample from Drew's talk
+// you think there would be consistency here, a plan for null

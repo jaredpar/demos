@@ -28,3 +28,6 @@ class ReadValuesOnlyOnce
 }
 
 // 32:15 - 2:15
+// reading twice, one to check null and the other to use
+// ?. doesn't fix nullability
+// cast does not recognize the bool

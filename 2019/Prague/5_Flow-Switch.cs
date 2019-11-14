@@ -24,3 +24,4 @@ class Swicthy
 }
 
 // 30:00 - 2:15
+// case null
