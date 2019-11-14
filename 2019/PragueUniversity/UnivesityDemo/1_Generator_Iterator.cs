@@ -12,3 +12,5 @@ class Iterator
         }
     }
 }
+
+// convert to LINQ

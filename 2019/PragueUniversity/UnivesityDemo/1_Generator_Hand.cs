@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 class HandGenerator
 {
-    static IEnumerable<int> DoubleValues(IEnumerable<int> e)
+    static IEnumerable<int> DoubleValues(IEnumerable<int> enumerable)
     {
-        return new DoubleEnumerable(e);
+        // For each value in enumerable, return a value that is twice that amount
+        return new DoubleEnumerable(enumerable);
     }
 
     class DoubleEnumerable: IEnumerable<int>
