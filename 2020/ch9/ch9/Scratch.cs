@@ -6,6 +6,24 @@ using System.Threading.Tasks;
 
 namespace ch9
 {
+    /*
+        public static bool operator ==(Person left, Person right) =>
+            left is object ? left.Equals(right) : right is null;
+
+        public static bool operator !=(Person left, Person right) => !(left == right);
+
+        public bool Equals(Person p) =>
+            p is object &&
+            FirstName == p.FirstName &&
+            LastName == p.LastName;
+
+        public override bool Equals(object obj) => obj is Person p && Equals(p);
+
+        public override int GetHashCode() => HashCode.Combine(FirstName, LastName);
+    */
+
+
+    /*
     public sealed class Person : IEquatable<Person>
     {
         public string FirstName { get; }
@@ -38,6 +56,7 @@ namespace ch9
 
         public override string ToString() => $"{FirstName} {LastName}";
     }
+    */
 
     public sealed class Point
     {
@@ -57,3 +76,35 @@ namespace System.Runtime.CompilerServices
 {
     class IsExternalInit { }
 }
+
+/*
+namespace ch9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var p = new Person("jared", "parsons");
+            var (firstName, lastName) = p;
+            Console.WriteLine($"{firstName} {lastName}");
+
+            if (p == new Person("john", "doe"))
+            {
+                Console.WriteLine("This is John Doe");
+            }
+
+            var p2 = p.WithLastName("Bome");
+        }
+
+        static bool IsInChat(Person p)
+        {
+            return p switch
+            {
+                ("jared", "parsons") => true,
+                ("cecil", "phillip") => true,
+                _ => false
+            };
+        }
+    }
+}
+*/
